@@ -69,6 +69,12 @@ The proxy emulates Anthropic's web search tool so Claude Code's WebSearch works 
 
 Claude Code sends requests in Anthropic format → proxy translates to OpenAI format → forwarded to GitHub Copilot → responses translated back. No data is stored or logged.
 
+## FAQ
+
+**Is this an official Copilot API?**
+
+No. GitHub doesn't publish a supported Copilot API. This proxy reuses the same backend your Copilot IDE calls, and it could break if GitHub changes those endpoints. Use it only in line with your Copilot terms.
+
 ## Troubleshooting
 
 **"401 Unauthorized" from Copilot**
